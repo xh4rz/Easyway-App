@@ -1,0 +1,49 @@
+.Navbar__primary {
+    background-color: #262236;
+    height: 100px;
+}
+
+.Logo {
+    height: 150px;
+}
+
+.Nav__primary {
+    width: 100%;
+}
+
+i {
+    color: #ED7526;
+}
+
+.form-inline {
+    width: 100%;
+    justify-content: center;
+}
+
+.Input-search {
+    width: 150%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.Navbar__secondary {
+    background-color: #3EE4EC;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    }
+
+.nav-link:hover {
+    background-color: black;
+    color: #ED7526 !important;
+}
+
+
+.dropdown-item.active, .dropdown-item:hover {
+    background-color: #ED7526 !important;
+}
+
+.dropdown-menu {
+    background-color: #3EE4EC !important;
+}
