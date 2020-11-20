@@ -37,20 +37,20 @@ class MyNavbar extends React.Component {
               <div className="d-flex justify-content-center">
                 <i className="fas fa-user fa-2x mb-2"></i>
               </div>
-              Mi Cuenta
+                Mi Cuenta
             </Nav.Link>
 
             <Nav.Link href="#pedidos">
               <div className="d-flex justify-content-center">
                 <i className="fas fa-clipboard-list fa-2x mb-2"></i>
               </div>
-              <span>Mis Pedidos</span>
+                Mis Pedidos
             </Nav.Link>
             <Nav.Link href="#carrito">
               <div className="d-flex justify-content-center">
                 <i className="fas fa-shopping-cart fa-2x mb-2"></i>
               </div>
-              <span>Mi Carrito</span>
+               Mi Carrito
             </Nav.Link>
           </Nav>
 
