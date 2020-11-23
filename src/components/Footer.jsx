@@ -3,6 +3,11 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import './styles/Footer.css';
+import Facebook from './images/icons/facebook.svg'
+import Instagram from './images/icons/instagram.svg'
+import Twitter from './images/icons/twitter.svg'
+import Whatsapp from './images/icons/whatsapp.svg'
+import Youtube from './images/icons/youtube.svg'
 
 class MyFooter extends React.Component {
     render() {
@@ -48,9 +53,11 @@ class MyFooter extends React.Component {
                             <h5 className="font-weight-bold text-uppercase mt-3 mb-4">Siguenos</h5>
                             <ul className="list-unstyled">
                                 <li className="Links__footer">
-                                    <a href="#hhh">hola</a> <br />
-                                    <a href="#hhh">hola</a> <br />
-                                    <a href="#hhh">hola</a> <br />
+                                    <a href="https://www.facebook.com"><img className="Facebook" src={Facebook} alt="mi Facebook" /></a>
+                                    <a href="https://www.instagram.com"><img className="Instagram" src={Instagram} alt="mi Instagram" /></a>
+                                    <a href="https://www.twitter.com"><img className="Twitter" src={Twitter} alt="mi Twitter" /></a>
+                                    <a href="https://web.whatsapp.com/"><img className="Whatsapp" src={Whatsapp} alt="mi Whatsapp" /></a>
+                                    <a href="https://youtube.com/"><img className="Youtube" src={Youtube} alt="mi Youtube" /></a>
                                 </li>
                             </ul>
                         </Col>
