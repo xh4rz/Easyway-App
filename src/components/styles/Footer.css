@@ -1,0 +1,22 @@
+.Footer__primary {
+    background-color: #262236;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.Links__footer > a {
+   color: #ffffff !important;
+}
+
+.Links__footer > a:hover {
+    color: #ED7526 !important;
+    text-decoration: none !important;
+}

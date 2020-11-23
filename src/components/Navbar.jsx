@@ -13,7 +13,7 @@ class MyNavbar extends React.Component {
     return (
       <>
         {/* Navbar Principal */}
-        <Navbar className="Navbar__primary">
+        <Navbar className="Navbar__primary" sticky="top">
 
           <Navbar.Brand href="#home">
             <img className="Logo" src={Logo} alt="mi navbar" />
