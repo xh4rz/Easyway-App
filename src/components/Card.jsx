@@ -1,15 +1,17 @@
 import React from 'react';
+import './styles/Card.css';
 import { makeStyles } from '@material-ui/core/styles';
-import {Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button} from '@material-ui/core';
+import {Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button, Box} from '@material-ui/core';
 
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import shopping from './images/cards/shopping.jpeg'
+
 
 const useStyles = makeStyles({
     root: {
       maxWidth: 345,
       margin: 10,
     },
-
     media: {
       height: 140,
     },
@@ -19,7 +21,7 @@ const useStyles = makeStyles({
     const classes = useStyles();
 
     return (
-        <div className= "Card" style={{display: "inline-flex"}}>
+        <div className= "Card">
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -30,21 +32,20 @@ const useStyles = makeStyles({
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              Nombre del producto
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
+              <b>Descripción:</b> <br/>
+              <b>Precio:</b>
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
+          <Button size="large" className="Button__Card">
+            <Box mr={1}>Agregar al carrito</Box>
+            <AddShoppingCartIcon/>
           </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
+
         </CardActions>
       </Card>
       </div>

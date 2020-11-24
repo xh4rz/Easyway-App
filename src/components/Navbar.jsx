@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import FormControl from 'react-bootstrap/FormControl';
@@ -15,9 +16,11 @@ class MyNavbar extends React.Component {
         {/* Navbar Principal */}
         <Navbar className="Navbar__primary" sticky="top">
 
-          <Navbar.Brand href="#home">
-            <img className="Logo" src={Logo} alt="mi navbar" />
-          </Navbar.Brand>
+          <Link to="/">
+            <Navbar.Brand>
+              <img className="Logo" src={Logo} alt="mi navbar" />
+            </Navbar.Brand>
+          </Link>
 
           <InputGroup className="Input-search">
             <FormControl
@@ -67,9 +70,11 @@ class MyNavbar extends React.Component {
 
               <NavDropdown title="Categorias" id="collasible-nav-dropdown">
 
-                <NavDropdown.Item href="#action/3.1">
-                  Hogar y Bienestar
-                </NavDropdown.Item>
+                <Link to="/Hogar">
+                   <NavDropdown.Item href="#action/3.1">
+                    Hogar y Bienestar
+                   </NavDropdown.Item>
+                </Link>
 
                 <NavDropdown.Item href="#action/3.2">
                   Tecnología

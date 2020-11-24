@@ -1,33 +1,33 @@
 import React from 'react';
-import MyNavbar from './components/Navbar';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import MySlider from './components/Slider';
-import ImgMediaCard from './components/Card';
-import MyFooter from './components/Footer';
+import MediaCard from './components/Card';
 
-// import './components/styles/Card.css'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <MyNavbar />
-      <MySlider />
-      <div className="Container__Cards" style={{textAlign: "center", margin: 100}}>
-        <ImgMediaCard />
-        <ImgMediaCard />
-        <ImgMediaCard /> <br/>
-        <ImgMediaCard />
-        <ImgMediaCard />
-        <ImgMediaCard /> <br/>
-        <ImgMediaCard />
-        <ImgMediaCard />
-        <ImgMediaCard />
-      </div>
+    <BrowserRouter>
+    <Layout>
+        <Switch>
+        <Route exact path = "/" component={MySlider}/>
 
+        <div className="Container__Cards" style={{textAlign: "center", margin: 100}}>
+        <Route exact patch = "/Hogar" component={MediaCard} />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        <MediaCard />
+        </div>
 
-      <MyFooter />
-
-    </div>
+        </Switch>
+    </Layout>
+    </BrowserRouter>
   );
 }
 
