@@ -1,0 +1,32 @@
+[
+  {
+    "id": "6UpsUcaGwszeDO_fTpogd",
+    "name": "arroz 6kg",
+    "price": 10000,
+    "description": "arroz blanco"
+  },
+  {
+    "id": "3KAeFIQ0nAeujQt59p380",
+    "name": "3 pechigas pollo ",
+    "price": 25000,
+    "description": "pechuga de pollo relajada"
+  },
+  {
+    "id": "4We4SX5d17J18ldRULdav",
+    "name": "libra de carne molida",
+    "price": 8500,
+    "description": "no tengo idea"
+  },
+  {
+    "id": "8BeUNeoUdhfLKjLgM-QEl",
+    "name": "libra de papa",
+    "price": 6000,
+    "description": "papa limpia de buena calidad"
+  },
+  {
+    "id": "cjhf84Kvt8lk4cZmq-Jo_",
+    "name": "1lt de leche",
+    "price": 2500,
+    "description": "leche jajajaja"
+  }
+]

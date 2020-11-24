@@ -1,29 +1,38 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import {Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button} from '@material-ui/core';
+import React, {useState} from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  Card,
+  CardActionArea,
+  CardMedia,
+  CardContent,
+  Typography,
+  CardActions,
+  Button,
+} from "@material-ui/core";
 
-import shopping from './images/cards/shopping.jpeg'
+
+import shopping from "./images/cards/shopping.jpeg";
 
 const useStyles = makeStyles({
-    root: {
-      maxWidth: 345,
-      margin: 10,
-    },
+  root: {
+    maxWidth: 345,
+    margin: 10,
+  },
 
-    media: {
-      height: 140,
-    },
-  });
+  media: {
+    height: 140,
+  },
+});
 
-  export default function MediaCard() {
-    const classes = useStyles();
-
-    return (
-        <div className= "Card" style={{display: "inline-flex"}}>
+export default function MediaCard({click}) {
+  const classes = useStyles();
+  
+  return (
+    <div className="Card" style={{ display: "inline-flex" }}>
       <Card className={classes.root}>
-        <CardActionArea>
+        <CardActionArea onClick={click}>
           <CardMedia
-            style={{height: "150px"}}
+            style={{ height: "150px" }}
             className={classes.media}
             image={shopping}
             title="Contemplative Reptile"
@@ -33,8 +42,8 @@ const useStyles = makeStyles({
               Lizard
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -47,6 +56,6 @@ const useStyles = makeStyles({
           </Button>
         </CardActions>
       </Card>
-      </div>
-    );
-  }
+    </div>
+  );
+}

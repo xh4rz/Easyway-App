@@ -32,6 +32,7 @@ i {
 
 .nav-link {
     color: #ffffff !important;
+    justify-content: flex-end;
     }
 
 .nav-link:hover {
@@ -45,4 +46,17 @@ i {
 
 .dropdown-menu {
     background-color: #3EE4EC !important;
+}
+.notificacion{
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+    width: 20px;
+    top: .5rem;
+    font-weight: 900;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: blue;
 }
