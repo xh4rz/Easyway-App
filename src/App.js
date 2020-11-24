@@ -10,23 +10,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <BrowserRouter>
-    <Layout>
+      <Layout>
         <Switch>
-        <Route exact path = "/" component={MySlider}/>
+          <Route exact path="/" component={MySlider} />
 
-        <div className="Container__Cards" style={{textAlign: "center", margin: 100}}>
-        <Route exact patch = "/Hogar" component={MediaCard} />
-        <MediaCard />
-        <MediaCard />
-        <MediaCard />
-        <MediaCard />
-        <MediaCard />
-        <MediaCard />
-        <MediaCard />
-        </div>
+          <div className="Container__Cards" style={{ textAlign: "center", margin: 100 }}>
+            <Route exact patch="/Hogar" component={MediaCard} />
+            <MediaCard />
+            <MediaCard />
+            <MediaCard />
+            <MediaCard />
+            <MediaCard />
+            <MediaCard />
+            <MediaCard />
+          </div>
 
         </Switch>
-    </Layout>
+      </Layout>
     </BrowserRouter>
   );
 }
