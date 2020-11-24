@@ -95,7 +95,7 @@ class MyNavbar extends React.Component {
               </NavDropdown>
 
               <Link to="/">
-                <Nav.Link href="#Inicio">
+                <Nav.Link href="#pricing">
                   <i className="fas fa-home mr-2"></i>
                    Inicio
               </Nav.Link>
