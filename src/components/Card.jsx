@@ -1,36 +1,29 @@
-import React, {useState} from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import {
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActions,
-  Button,
-} from "@material-ui/core";
+import React from 'react';
+import './styles/Card.css';
+import { makeStyles } from '@material-ui/core/styles';
+import {Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button, Box} from '@material-ui/core';
 
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import shopping from './images/cards/shopping.jpeg'
 
-import shopping from "./images/cards/shopping.jpeg";
 
 const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-    margin: 10,
-  },
-
-  media: {
-    height: 140,
-  },
+    root: {
+      maxWidth: 345,
+      margin: 10,
+    },
+    media: {
+      height: 140,
+    },
 });
 
-export default function MediaCard({click}) {
+export default function MediaCard({click, name, price, description, ID }) {
   const classes = useStyles();
   
   return (
     <div className="Card" style={{ display: "inline-flex" }}>
       <Card className={classes.root}>
-        <CardActionArea onClick={click}>
+        <CardActionArea>
           <CardMedia
             style={{ height: "150px" }}
             className={classes.media}
@@ -39,21 +32,20 @@ export default function MediaCard({click}) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              {name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              <b>{description}</b> <br/>
+              <b>{price} COP</b>
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
+          <Button id={ID} size="large" className="Button__Card" onClick={click}>
+            <Box mr={1} id={ID}>Agregar al carrito</Box>
+            <AddShoppingCartIcon/>
           </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
+
         </CardActions>
       </Card>
     </div>

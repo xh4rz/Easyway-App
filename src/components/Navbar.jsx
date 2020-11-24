@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from 'react-router-dom';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import FormControl from "react-bootstrap/FormControl";
@@ -21,9 +22,12 @@ function MyNavbar(props){
       <>
         {/* Navbar Principal */}
         <Navbar className="Navbar__primary" sticky="top">
-          <Navbar.Brand href="#home">
-            <img className="Logo" src={Logo} alt="mi navbar" />
-          </Navbar.Brand>
+
+          <Link to="/">
+            <Navbar.Brand>
+              <img className="Logo" src={Logo} alt="mi navbar" />
+            </Navbar.Brand>
+          </Link>
 
           <InputGroup className="Input-search">
             <FormControl
@@ -74,9 +78,12 @@ function MyNavbar(props){
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="prueba">
               <NavDropdown title="Categorias" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  Hogar y Bienestar
-                </NavDropdown.Item>
+
+                <Link to="/Hogar">
+                  <NavDropdown.Item href="#action/3.1">
+                    Hogar y Bienestar
+                   </NavDropdown.Item>
+                </Link>
 
                 <NavDropdown.Item href="#action/3.2">
                   Tecnología
@@ -91,10 +98,12 @@ function MyNavbar(props){
                 <NavDropdown.Item href="#action/3.5">otros</NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#features">
-                <i className="fas fa-home mr-2"></i>
-                Inicio
+              <Link to="/">
+                <Nav.Link href="#Inicio">
+                  <i className="fas fa-home mr-2"></i>
+                   Inicio
               </Nav.Link>
+              </Link>
 
               <Nav.Link href="#pricing">
                 <i className="fas fa-tags mr-2"></i>

@@ -1,0 +1,13 @@
+.Card {
+    display: inline-flex;
+}
+
+.Button__Card {
+    width: 100%;
+    background-color: #3EE4EC !important;
+    color: black !important;
+}
+
+.Button__Card:hover {
+    background-color: #ED7526 !important;
+}
