@@ -352,3 +352,10 @@ template {
 button{
   outline: none !important;
 }
+
+/* Carousel Secundario */
+.rec-carousel-wrapper {
+background-color:  #ed75266e;
+  /* margin-top: 100px; */
+  border: 10px solid #262236;
+}
