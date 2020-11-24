@@ -20,7 +20,7 @@ function App() {
   
   const Addcarrito = (e) => {
     const elem = e.target.id;
-    //console.log(elem);
+    console.log(data);
     let vector = JSON.parse(localStorage.getItem('Compra'));
     vector.push(data.find(element => element.id === elem));
     localStorage.setItem('Compra', JSON.stringify(vector));
@@ -33,6 +33,10 @@ function App() {
         
           <Route exact path="/" component={() => <MySlider Add={Addcarrito} data={data} />} />
           <Route exact path="/Hogar" component={() => <Search Add={Addcarrito} data={data} />} />
+          <Route exact path="/Tecnologia" component={() => <Search Add={Addcarrito} data={data} />} />
+          <Route exact path="/Alimentos" component={() => <Search Add={Addcarrito} data={data} />} />
+          <Route exact path="/Salud" component={() => <Search Add={Addcarrito} data={data} />} />
+          <Route exact path="/otros" component={() => <Search Add={Addcarrito} data={data} />} />
           
 
         </Switch>

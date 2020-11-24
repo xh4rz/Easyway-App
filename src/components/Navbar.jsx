@@ -84,18 +84,22 @@ function MyNavbar(props){
                     Hogar y Bienestar
                    </NavDropdown.Item>
                 </Link>
-
+                <Link to="/Tecnologia">
                 <NavDropdown.Item href="#action/3.2">
                   Tecnología
                 </NavDropdown.Item>
-
+                </Link>
+                <Link to="/Alimentos">
                 <NavDropdown.Item href="#action/3.3">
                   Alimentos
                 </NavDropdown.Item>
-
+                </Link>
+                <Link to="/Salud">
                 <NavDropdown.Item href="#action/3.4">Salud</NavDropdown.Item>
-
+                </Link>
+                <Link to="/otros">
                 <NavDropdown.Item href="#action/3.5">otros</NavDropdown.Item>
+                </Link>
               </NavDropdown>
 
               <Link to="/">

@@ -6,16 +6,22 @@ import MediaCard from "./Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App({ Add, data }) {
-  return (
+  const path = window.location.pathname;
+  const datastart = () =>(
+    path === "/Hogar" ? 12 : 
+    path === "/Tecnologia" ? 4 : 
+    path === "/Alimentos" ? 0 : 
+    path === "/Salud" ? 8 : 0
+  )
+    console.log(`${path}`);
+    return (
     <div
       className="Container__Cards"
       style={{ textAlign: "center", margin: 100 }}
     >
-      {data.length === 0
-        ? ""
-        : window.location.pathname === "/Hogar" ?
-        data
-            .slice(11, data.length)
+      {}
+      {   data
+            .slice(datastart(), path === "/otros" ? data.length : datastart() +4 )
             .map((info) => (
               <MediaCard
                 key={info.id}
@@ -25,7 +31,7 @@ function App({ Add, data }) {
                 description={info.description}
                 click={Add}
               />
-            )) : ""}
+            ))}
     </div>
   );
 }
