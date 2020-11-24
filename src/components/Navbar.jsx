@@ -71,7 +71,7 @@ class MyNavbar extends React.Component {
               <NavDropdown title="Categorias" id="collasible-nav-dropdown">
 
                 <Link to="/Hogar">
-                   <NavDropdown.Item href="#action/3.1">
+                  <NavDropdown.Item href="#action/3.1">
                     Hogar y Bienestar
                    </NavDropdown.Item>
                 </Link>
@@ -94,10 +94,12 @@ class MyNavbar extends React.Component {
 
               </NavDropdown>
 
-              <Nav.Link href="#features">
-                <i className="fas fa-home mr-2"></i>
+              <Link to="/">
+                <Nav.Link href="#Inicio">
+                  <i className="fas fa-home mr-2"></i>
                    Inicio
               </Nav.Link>
+              </Link>
 
               <Nav.Link href="#pricing">
                 <i className="fas fa-tags mr-2"></i>
