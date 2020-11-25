@@ -10,6 +10,8 @@ import data from './data/item.json'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import FormLogin from './pages/Login';
+
 function App() {
   const peticion = JSON.parse(localStorage.getItem("Compra"));
   
@@ -33,7 +35,7 @@ function App() {
 
           <Route exact path="/" component={() => <MySlider Add={Addcarrito} data={data} />} />
           <Route exact path="/Hogar" component={() => <Search Add={Addcarrito} data={data} />} />
-
+          <Route exact path="/Login" component={FormLogin} />
 
         </Switch>
       </Layout>

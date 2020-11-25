@@ -50,7 +50,6 @@ const MySlider = ({Add, data}) => {
                 {data.length === 0 ? "" : data.slice(0,3).map((info) => (
                 <MediaCard key={info.id} ID={info.id} name={info.name} price={info.price} description={info.description} click={Add} />
                 ))}
-                
             </div>
         </React.Fragment>
     );
