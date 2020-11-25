@@ -16,7 +16,9 @@ function MyNavbar(props){
   if((Compra.length === 0 && peticion.length!==0) || (Compra.length!==0 && peticion.length!==Compra.length)){
     setCompra(peticion);
   }
-    
+  const getAlert = () =>{
+    console.log("holiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
+  }
   
     return (
       <>
@@ -103,7 +105,7 @@ function MyNavbar(props){
               </NavDropdown>
 
               <Link to="/">
-                <Nav.Link href="#Inicio">
+                <Nav.Link href="/">
                   <i className="fas fa-home mr-2"></i>
                    Inicio
               </Nav.Link>

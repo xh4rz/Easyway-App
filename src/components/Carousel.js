@@ -21,8 +21,8 @@ class CarouselSecondary extends React.Component {
                 <ElasticCarousel breakPoints={breakPoints}>
                     
                     {this.props.data.length === 0 ? "" : this.props.data.slice(0,16).map((info) => (
-                        <Item>
-                <MediaCard key={info.id} ID={info.id} name={info.name} price={info.price} description={info.description} click={this.props.Add} />
+                        <Item key={info.id}>
+                <MediaCard  ID={info.id} name={info.name} price={info.price} description={info.description} click={this.props.Add} />
                 </Item>))}
                     
                     
