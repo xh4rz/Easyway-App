@@ -30,7 +30,7 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-        
+
           <Route exact path="/" component={() => <MySlider Add={Addcarrito} data={data} />} />
           <Route exact path="/Hogar" component={() => <Search Add={Addcarrito} data={data} />} />
           <Route exact path="/Tecnologia" component={() => <Search Add={Addcarrito} data={data} />} />
