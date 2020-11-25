@@ -45,12 +45,15 @@ function MyNavbar(props){
           </InputGroup>
 
           <Nav className="Nav__primary d-flex justify-content-end">
+
+          <Link to="/Login">
             <Nav.Link href="#cuenta">
               <div className="d-flex justify-content-center">
                 <i className="fas fa-user fa-2x mb-2"></i>
               </div>
               Mi Cuenta
             </Nav.Link>
+          </Link>
 
             <Nav.Link href="#pedidos">
               <div className="d-flex justify-content-center">

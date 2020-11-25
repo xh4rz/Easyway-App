@@ -8,6 +8,9 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import './components/styles/Card.css'
 import data from "./data/item.json";
 
+import FormLogin from './Pages/Login'
+
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends React.Component {
@@ -64,6 +67,10 @@ class App extends React.Component {
               path="/otros"
               component={() => <Search Add={Addcarrito} data={data} />}
             />
+            <Route
+              exact
+              path="/Login"
+              component={FormLogin} />
           </Switch>
         </Layout>
       </BrowserRouter>
