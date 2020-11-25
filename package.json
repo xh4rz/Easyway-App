@@ -41,18 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "Proyecto Supermercado Easyway",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xh4rz/Easyway-App.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xh4rz/Easyway-App/issues"
-  },
-  "homepage": "https://github.com/xh4rz/Easyway-App#readme"
+  }
 }

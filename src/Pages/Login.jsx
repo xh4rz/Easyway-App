@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center'
   },
   main: {
-    height: '90vh'
+    height: '88vh'
   },
   form: {
     margin: '1vh 0vh'

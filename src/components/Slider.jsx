@@ -6,7 +6,7 @@ import Slide3 from "./images/maizena.webp";
 // import Layout from './Layout';
 //import { nanoid } from 'nanoid'
 
-import MediaCard from './Card';
+//import MediaCard from './Card';
 import CarouselSecondary from './Carousel';
 
 
