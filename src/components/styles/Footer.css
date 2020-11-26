@@ -5,24 +5,21 @@
 
 .footer {
     width: 100%;
-    height: 81px;
-    /*position: relative;*/
+    position: relative;
     bottom: 0;
     left: 0;
 }
 
-
-.Links__footer > a {
-   color: #ffffff !important;
+.Links__footer>a {
+    color: #ffffff !important;
 }
 
-.Links__footer > a:hover {
+.Links__footer>a:hover {
     color: #ED7526 !important;
     text-decoration: none !important;
 }
 
-.Links__footer > a > img {
+.Links__footer>a>img {
     width: 50px;
     height: 25px;
 }
-
