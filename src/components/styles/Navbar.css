@@ -52,12 +52,12 @@ i {
     position: fixed;
     z-index: 20;
     background-color: white;
-    width: 20px;
+    width: 30px;
     top: .5rem;
     font-weight: 900;
-    height: 20px;
-    border-radius: 10px;
+    height: 30px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
-    color: blue;
+    color: cyan;
 }

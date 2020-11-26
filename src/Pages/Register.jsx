@@ -21,8 +21,12 @@ import LocationCityIcon from '@material-ui/icons/LocationCity';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import SendIcon from '@material-ui/icons/Send';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+const api = axios.create({
+  baseURL: `http://localhost:3001/gets`
+});
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: '14vh',
@@ -69,7 +73,39 @@ export default function FormRegister() {
   const handleChange = (event) => {
     setCity(event.target.value);
   };
+  /*const [count, setCount] = React.useState({
+    loading: false,
+    Email: '',
+    Contraseña: '',
+    Nombres: '',
+    Apellido: '',
+    Telefono: '',
+    Ciudad: '',
+    Direccion: '',
+  });
 
+  const handleinputChange = (e) => {
+    //console.log(e);
+    setCount({
+        ...count,
+        [e.target.name]: e.target.value,
+    });
+  };
+  const sumitb = async (e) => {
+    //setCount({ loading: true});
+    try {
+      console.log("wait");
+      let respost = await api.post('/newuser', {data: count.Nombres});
+      console.log(respost);
+    } catch (error) {
+      console.log("wait2");
+      console.log(error);
+      setCount({ loading: false});
+    }
+  }*/
+  /*if(count.loading === true){
+    return <Redirect to='/'  />;
+  }*/
   return (
 
     <Box display="flex" justifyContent="center" >
