@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#ed7526"
   },
   dividerColor: {
-    backgroundColor: 'white',
+    backgroundColor: '#ed7526',
   },
   formControl: {
     minWidth: 205

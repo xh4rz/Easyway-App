@@ -33,7 +33,8 @@ export default function MediaCard({ click, name, price, description, ID }) {
               {name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <b>{description}</b> <br />
+              <textarea style={{ resize: 'none', height: 100 }} name="textarea" rows="10" cols="32"
+                defaultValue={description} disabled></textarea> <br />
               <b>{price} COP</b>
             </Typography>
           </CardContent>
