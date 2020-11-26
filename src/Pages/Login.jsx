@@ -102,7 +102,7 @@ export default function FormLogin() {
 
             <Button style={{ backgroundColor: '#3EE4EC' }}
               variant="contained"
-              size="large" 
+              size="large"
               color="primary"
               endIcon={<SendIcon></SendIcon>}
             >

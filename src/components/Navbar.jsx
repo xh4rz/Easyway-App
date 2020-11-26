@@ -21,13 +21,11 @@ function MyNavbar(props) {
     <>
       {/* Navbar Principal */}
       <Navbar className="Navbar__primary" sticky="top">
-
         <Link to="/">
           <Navbar.Brand>
             <img className="Logo" src={Logo} alt="mi navbar" />
           </Navbar.Brand>
         </Link>
-
         <InputGroup className="Input-search">
           <FormControl
             placeholder="¿Qué estás buscando?"
@@ -40,16 +38,13 @@ function MyNavbar(props) {
             </Button>
           </InputGroup.Append>
         </InputGroup>
-
         <Nav className="Nav__primary d-flex justify-content-end">
-
           <Link to="/Login" className="nav-link">
             <div className="d-flex justify-content-center">
               <i className="fas fa-user fa-2x mb-2"></i>
             </div>
               Mi Cuenta
           </Link>
-
           <Nav.Link href="#pedidos">
             <div className="d-flex justify-content-center">
               <i className="fas fa-clipboard-list fa-2x mb-2"></i>
@@ -61,7 +56,6 @@ function MyNavbar(props) {
               <div className="notificacion">
                 {Compra.length}
               </div>
-
             }
             <div className="d-flex justify-content-center">
               <i className="fas fa-shopping-cart fa-2x mb-2"></i>
@@ -70,7 +64,6 @@ function MyNavbar(props) {
             </Nav.Link>
         </Nav>
       </Navbar>
-
       {/* Navbar Secundario */}
       <Navbar collapseOnSelect expand="lg" className="Navbar__secondary">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -101,27 +94,22 @@ function MyNavbar(props) {
                 <NavDropdown.Item href="#action/3.5">otros</NavDropdown.Item>
               </Link>
             </NavDropdown>
-
             <Link to="/" className="nav-link">
               <i className="fas fa-home mr-2"></i>
                    Inicio
               </Link>
-
             <Nav.Link href="#pricing">
               <i className="fas fa-tags mr-2"></i>
                 Ofertas
               </Nav.Link>
-
             <Nav.Link href="#pricing">
               <i className="fas fa-map-marker-alt mr-2"></i>
                 Tiendas
               </Nav.Link>
-
             <Nav.Link href="#pricing">
               <i className="fas fa-store mr-2"></i>
                 Conócenos
               </Nav.Link>
-
             <Nav.Link href="#pricing">
               <i className="fas fa-handshake mr-2"></i>
                 Servicios
@@ -131,7 +119,6 @@ function MyNavbar(props) {
       </Navbar>
     </>
   );
-
 }
 
 export default MyNavbar;

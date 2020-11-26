@@ -1,25 +1,23 @@
 import React from 'react';
 import './styles/Card.css';
 import { makeStyles } from '@material-ui/core/styles';
-import {Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button, Box} from '@material-ui/core';
-
+import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Button, Box } from '@material-ui/core';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import shopping from './images/cards/shopping.jpeg'
 
-
 const useStyles = makeStyles({
-    root: {
-      maxWidth: 345,
-      margin: 10,
-    },
-    media: {
-      height: 140,
-    },
+  root: {
+    maxWidth: 345,
+    margin: 10,
+  },
+  media: {
+    height: 140,
+  },
 });
 
-export default function MediaCard({click, name, price, description, ID }) {
+export default function MediaCard({ click, name, price, description, ID }) {
   const classes = useStyles();
-  
+
   return (
     <div className="Card" style={{ display: "inline-flex" }}>
       <Card className={classes.root}>
@@ -35,7 +33,7 @@ export default function MediaCard({click, name, price, description, ID }) {
               {name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <b>{description}</b> <br/>
+              <b>{description}</b> <br />
               <b>{price} COP</b>
             </Typography>
           </CardContent>
@@ -43,7 +41,7 @@ export default function MediaCard({click, name, price, description, ID }) {
         <CardActions>
           <Button id={ID} size="large" className="Button__Card" onClick={click}>
             <Box mr={1} id={ID}>Agregar al carrito</Box>
-            <AddShoppingCartIcon/>
+            <AddShoppingCartIcon />
           </Button>
 
         </CardActions>
