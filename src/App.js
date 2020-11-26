@@ -4,8 +4,8 @@ import Layout from "./components/Layout";
 import MySlider from "./components/Slider";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import data from "./data/item.json";
-
 import FormLogin from './Pages/Login'
+import FormRegister from './Pages/Register'
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -68,6 +68,10 @@ class App extends React.Component {
               exact
               path="/Login"
               component={FormLogin} />
+             <Route
+              exact
+              path="/Register"
+              component={FormRegister} />
           </Switch>
         </Layout>
       </BrowserRouter>
