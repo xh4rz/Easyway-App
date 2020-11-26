@@ -51,7 +51,7 @@ i {
 .notificacion {
     position: fixed;
     z-index: 20;
-    /* background-color: white; */
+    background-color: black;
     width: 30px;
     top: .5rem;
     font-weight: 900;
