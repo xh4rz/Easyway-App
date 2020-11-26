@@ -1,9 +1,5 @@
 import React from "react";
-//import Layout from "./Layout";
 import MediaCard from "./Card";
-// import './components/styles/Card.css'
-
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App({ Add, data }) {
   const path = window.location.pathname;

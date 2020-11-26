@@ -1,15 +1,11 @@
 import React from "react";
 import Search from "./components/Search";
 import Layout from "./components/Layout";
-//import MyNavbar from './components/Navbar';
 import MySlider from "./components/Slider";
-//import MediaCard from './components/Card';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-// import './components/styles/Card.css'
-//import dataD from "./data/item.json";
 import axios from 'axios';
-import FormLogin from './Pages/Login';
-import "bootstrap/dist/css/bootstrap.min.css";
+
+import FormLogin from './Pages/Login'
 
 const api = axios.create({
   baseURL: `http://localhost:3001/gets`

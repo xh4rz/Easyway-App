@@ -33,7 +33,7 @@ i {
 .nav-link {
     color: #ffffff !important;
     justify-content: flex-end;
-    }
+}
 
 .nav-link:hover {
     background-color: black;
@@ -47,7 +47,8 @@ i {
 .dropdown-menu {
     background-color: #3EE4EC !important;
 }
-.notificacion{
+
+.notificacion {
     position: fixed;
     z-index: 20;
     background-color: white;
