@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import  { Redirect } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
-import { FormControl, TextField, Grid, Typography, Box, Button, Link } from '@material-ui/core';
+import { FormControl, TextField, Grid, Typography, Box, Button } from '@material-ui/core';
 import MailIcon from '@material-ui/icons/Mail';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import SendIcon from '@material-ui/icons/Send';
@@ -10,6 +10,7 @@ import axios from 'axios';
 const api = axios.create({
   baseURL: `http://localhost:3001/gets`
 });
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -103,7 +104,7 @@ export default function FormLogin() {
               </Grid>
             </Grid>
           </Box>
-          <Box mt={3} mb={8}>
+          <Box mt={3} mb={5}>
             <Grid container spacing={1} alignItems="flex-end" className={classes.form}>
               <Grid item>
                 <VpnKeyIcon />
@@ -139,6 +140,16 @@ export default function FormLogin() {
             </Grid>
           </Box>
 
+          <Box mb={5} style={{ width: '100%' }} display="flex" justifyContent="center">
+                <Link to="/Register"
+                  style={{ textDecoration: 'none', filter: 'contrast(1)' }}
+                >
+                  <Button style={{ textTransform: 'none' }} variant="outlined" size="small" color="secondary" >
+                    Si no tienes cuenta da clic acá
+                </Button>
+                </Link>
+          </Box>
+
             <Button style={{ backgroundColor: '#3EE4EC' }}
               variant="contained"
               size="large"
@@ -151,7 +162,7 @@ export default function FormLogin() {
 
 
           <Box mt={4} style={{ width: '100%' }} display="flex" justifyContent="center">
-            <Link
+            <Link to="/"
               style={{ textDecoration: 'none', filter: 'contrast(1)' }}
             >
               <Button variant="contained" size="small" color="secondary"style={{ backgroundColor: '#ed7526' }}

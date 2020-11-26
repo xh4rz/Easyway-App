@@ -4,9 +4,9 @@ import Layout from "./components/Layout";
 import MySlider from "./components/Slider";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import axios from 'axios';
-
-import FormLogin from './Pages/Login'
 import "bootstrap/dist/css/bootstrap.min.css";
+import FormLogin from './Pages/Login'
+import FormRegister from './Pages/Register'
 
 const api = axios.create({
   baseURL: `http://localhost:3001/gets`
@@ -91,6 +91,10 @@ class App extends React.Component {
               exact
               path="/Login"
               component={FormLogin} />
+             <Route
+              exact
+              path="/Register"
+              component={FormRegister} />
           </Switch>
         </Layout>
       </BrowserRouter>
