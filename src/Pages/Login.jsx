@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
+import  { Redirect } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import { FormControl, TextField, Grid, Typography, Box, Button, Link } from '@material-ui/core';
 import MailIcon from '@material-ui/icons/Mail';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import SendIcon from '@material-ui/icons/Send';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import axios from 'axios';
+const api = axios.create({
+  baseURL: `http://localhost:3001/gets`
+});
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,7 +39,37 @@ const useStyles = makeStyles((theme) => ({
 
 export default function FormLogin() {
   const classes = useStyles();
+  const [count, setCount] = useState({
+    loading: false,
+    Email: '',
+    Contraseña: '',
+  });
 
+  const handleChange = (e) => {
+    //console.log(e);
+    setCount({
+        ...count,
+        [e.target.name]: e.target.value,
+    });
+  };
+  const sumitb = async (e) => {
+    //setCount({ loading: true});
+    try {
+      await api.get('/'+count.Email).then( (res) => {
+        
+        console.log(res.data);
+        localStorage.setItem("user", JSON.stringify({Email: res.data[0].Email}));
+        setCount({ loading: true});
+      });
+      
+    } catch (error) {
+      console.log(error);
+      setCount({ loading: false});
+    }
+  }
+  if(count.loading === true){
+    return <Redirect to='/'  />;
+  }
   return (
 
     <Box display="flex" justifyContent="center">
@@ -59,6 +94,8 @@ export default function FormLogin() {
                   label="Email"
                   type="email"
                   fullWidth
+                  name="Email"
+                                      onChange={handleChange}
                   InputProps={{
                     className: classes.input
                   }}
@@ -78,6 +115,8 @@ export default function FormLogin() {
                   label="Contraseña"
                   type="password"
                   fullWidth
+                  name="Contraseña"
+                                        onChange={handleChange}
                   InputProps={{
                     className: classes.input
                   }}
@@ -103,6 +142,7 @@ export default function FormLogin() {
             <Button style={{ backgroundColor: '#3EE4EC' }}
               variant="contained"
               size="large"
+                                        onClick={sumitb}
               color="primary"
               endIcon={<SendIcon></SendIcon>}
             >

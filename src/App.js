@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import axios from 'axios';
 
 import FormLogin from './Pages/Login'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const api = axios.create({
   baseURL: `http://localhost:3001/gets`

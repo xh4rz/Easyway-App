@@ -1,0 +1,98 @@
+[
+  {
+    "id": "6UpsUcaGwszeDO_fTpogd",
+    "name": "arroz 6kg",
+    "price": 10000,
+    "description": "arroz blanco"
+  },
+  {
+    "id": "3KAeFIQ0nAeujQt59p380",
+    "name": "3 pechigas pollo ",
+    "price": 25000,
+    "description": "pechuga de pollo relajada"
+  },
+  {
+    "id": "4We4SX5d17J18ldRULdav",
+    "name": "libra de carne molida",
+    "price": 8500,
+    "description": "no tengo idea"
+  },
+  {
+    "id": "4WeUNeoUdhfLKldRULdav",
+    "name": "1kg de Manzana",
+    "price": 8500,
+    "description": "Manzanas rojas"
+  },
+  {
+    "id": "8BeUNeoUdhfLKjLgM-QEl",
+    "name": "Televisor Led LG",
+    "price": 2299000,
+    "description": "65 Pulgadas 164 Cms UHD Smart 65UM7650PD - LG"
+  },
+  {
+    "id": "cjhf84Kvt8lk4cZmq-Jo_",
+    "name": "GALAXY A21S",
+    "price": 1099900,
+    "description": "GALAXY A21S 128 GB NEGRO, Tipo de Bateria 5000 (mAh, Typical), Cámara Principal 48.0 MP + 8.0 MP + 2.0 MP + 2.0 MP"
+  },
+  {
+    "id": "YrRoljWQGI7gEY20Wtz1h",
+    "name": "Portátil Acer",
+    "price": 4599000,
+    "description": "Computador Portátil Acer 15.6 Pulgadas Gaming Ci5 12GB 512GB SSD AN515-54-55MX"
+  },
+  {
+    "id": "GVhnKNScCwtbExdaiDWzC",
+    "name": "PlayStation 4 PRO",
+    "price": 2600000,
+    "description": "El doble de potencia (Comparado con el modelo anterior de PS4) con una increíble combinación de calidad visual y ejecución en una consola."
+  },
+  {
+    "id": "53tM8T4IYib5gFqcO1c9k",
+    "name": "Shampoo Dove",
+    "price": 24600,
+    "description": "reconstrucción completa dove 750ml, reconstruye profundamente el cabello severamente dañado"
+  },
+  {
+    "id": "t7Qpttd6HJaIBUS3Ijl0_",
+    "name": "Crema Dental Colgate",
+    "price": 10900,
+    "description": "Triple Acción Oferta 3 unidades de 75 ml c/u"
+  },
+  {
+    "id": "lbH2oF35gOT85987n_Ex9",
+    "name": "Jabón Protex",
+    "price": 6000,
+    "description": "Jabón en barra Limpieza Profunda 120g x 3 Und - PROTEX"
+  },
+  {
+    "id": "FT8kW3pkRXTSxGO9aAn_e",
+    "name": "Máquinas de afeitar",
+    "price": 14200,
+    "description": "Máquinas de afeitar Gillette Prestobarba3 x 2 und - PRESTOBARBA"
+  },
+  {
+    "id": "xcVctHpDB8UEEtV3xSATr",
+    "name": "Silla Gerencial",
+    "price": 370000,
+    "description": "Para oficina moderna y elegante, con marco ergonómico de metal 1.5mm con madera de 1.2cm"
+  },
+  {
+    "id": "APAtYyVgDGZc497Np7VFr",
+    "name": "Sofa ",
+    "price": 1699000,
+    "description": "Fabricado en madera seca al horno de 20mm de espesor que permite una muy buena resistencia y confort."
+  },
+  {
+    "id": "YzPRVeYCingcMXB35NWnv",
+    "name": "Cortina Enrollable",
+    "price": 10900,
+    "description": "Cortina Enrollable Novelty Home Blackout Blanco 180 x 180 cm - NOVELTY HOME"
+  },
+  {
+    "id": "mdCuHzi7A7uNhENFAeN2G",
+    "name": "BATA BAÑO",
+    "price": 54900,
+    "description": "TALLA U CANNON BATA280H Composición de Producto ALGODÓN"
+  }
+]
